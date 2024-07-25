@@ -10,18 +10,12 @@ def pascal_triangle(n):
     Returns:
         list: A list of lists of integers representing the Pascal’s triangle.
     """
-    triangle = []
-
     if n <= 0:
-        return triangle
-    for i in range(n):
-        temp_list = []
+        return []
 
-        for j in range(i+1):
-            if j == 0 or j == i:
-                temp_list.append(1)
-            else:
-                temp_list.append(triangle[i-1][j-1] + triangle[i-1][j])
-        triangle.append(temp_list)
-    # print(triangle)
+    triangle = [[1 for _ in range(i+1)] for i in range(n)]
+    for i in range(2, n):
+        for j in range(1, i):
+            triangle[i][j] = triangle[i-1][j-1] + triangle[i-1][j]
+
     return triangle
