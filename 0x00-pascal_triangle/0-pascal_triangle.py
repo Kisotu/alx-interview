@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+'''Each row of the triangle is numbered starting
+from 0, and each entry is the sum of the two entries above it'''
+
+
 def pascal_triangle(n):
     """
     Returns list of lists of integers representing the Pascal’s triangle of n.
