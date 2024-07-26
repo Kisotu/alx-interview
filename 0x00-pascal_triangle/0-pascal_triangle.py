@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-'''Each row of the triangle is numbered starting
-from 0, and each entry is the sum of the two entries above it'''
+"""This module contains a function that defines
+the structure of a pascal triangle. """
 
 
 def pascal_triangle(n):
@@ -17,7 +17,7 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
-    triangle = [[1]]
+    triangle = [[1]]  # initialize triangle with 1
 
     for i in range(1, n):
         row = [1]
