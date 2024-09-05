@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const req = require('req');
+const req = require('request');
 const STWARS_URL = 'https://swapi-api.hbtn.io/api';
 
 if (process.argv.length > 2) {
